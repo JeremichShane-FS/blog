@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { Image } from 'astro:assets';
 ---
 
 <!doctype html>
@@ -14,7 +15,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 		<Header />
 		<main>
   <header>
-    <img class="sj-logo" src=`${import.meta.env.BASE_URL}/images/black-logo.png` alt="Shane Jeremich logo">
+    <Image class="sj-logo" src=`${import.meta.env.BASE_URL}/images/black-logo.png` alt="Shane Jeremich logo" width={189} height={160} loading="eager" decoding="async"/>
     <h1>Hi there 👋</h1>
     <h2>
       My name is <strong>Shane Jeremich</strong> 
@@ -25,7 +26,7 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     Welcome to <strong>WDV463</strong>! I'm Shane Jeremich, and this space is dedicated to sharing insights, resources, and reflections on the ever-evolving world of technology. As I continue my journey through the WDV463 course and beyond, I’ll be diving into topics that spark my curiosity and expanding on what I’ve learned. Whether it’s a recent discovery, a deep dive into tech tools, or thoughts on development best practices, I hope my posts offer valuable takeaways and perspectives for fellow learners and tech enthusiasts.
   </p>
 
-  <img class="feature-image" src=`${import.meta.env.BASE_URL}/images/do-more.jpg` alt="Picture of a computer that says Do More">
+  <Image class="feature-image" src=`${import.meta.env.BASE_URL}/images/do-more.jpg` alt="Computer that says Do More" width={720} height={480} loading="eager" decoding="async" />
 
   <p>
     In this blog, I aim to break down complex ideas into accessible, easy-to-understand posts. Whether you're just starting out or have been working with technology for a while, there's something here for everyone. Feel free to explore, ask questions, and share your thoughts. My goal is to create a collaborative space where we can all learn from each other and stay up-to-date with the latest trends and tools in the tech world. 🌐
