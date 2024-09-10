@@ -13,38 +13,41 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
-		</main>
+  <header>
+    <img class="sj-logo" src="/images/black-logo.png" alt="Shane Jeremich logo">
+    <h1>Hi there 👋</h1>
+    <h2>
+      My name is <strong>Shane Jeremich</strong> 
+    </h2>
+  </header>
+
+  <p>
+    Welcome to <strong>WDV463</strong>! I'm Shane Jeremich, and this space is dedicated to sharing insights, resources, and reflections on the ever-evolving world of technology. As I continue my journey through the WDV463 course and beyond, I’ll be diving into topics that spark my curiosity and expanding on what I’ve learned. Whether it’s a recent discovery, a deep dive into tech tools, or thoughts on development best practices, I hope my posts offer valuable takeaways and perspectives for fellow learners and tech enthusiasts.
+  </p>
+
+  <img class="feature-image" src="/images/do-more.jpg" alt="Picture of a computer that says Do More">
+
+  <p>
+    In this blog, I aim to break down complex ideas into accessible, easy-to-understand posts. Whether you're just starting out or have been working with technology for a while, there's something here for everyone. Feel free to explore, ask questions, and share your thoughts. My goal is to create a collaborative space where we can all learn from each other and stay up-to-date with the latest trends and tools in the tech world. 🌐
+  </p>
+</main>
+
 		<Footer />
 	</body>
 </html>
+<style>
+  .sj-logo {
+    height: 10rem;
+    margin: 0 auto;
+  }
+  .feature-image {
+    width: 100%;
+    margin: 4rem 0;
+  }
+  h1 {
+    margin-top: 4rem;
+  }
+  h2 {
+    margin-bottom: 4rem;
+  }
+</style>
