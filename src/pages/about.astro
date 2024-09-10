@@ -6,7 +6,7 @@ import Layout from '../layouts/BlogPost.astro';
 	title="About Me"
 	description="Lorem ipsum dolor sit amet"
 	pubDate={new Date('September 10, 2024')}
-	heroImage="/images/blog-about.jpg"
+	heroImage={`${import.meta.env.BASE_URL}/images/blog-about.jpg`}
 >
 	<p>
 		As an ambitious web developer, I bring a problem-solving approach and a strong technology
