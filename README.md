@@ -1,68 +1,42 @@
-# Astro Starter Kit: Blog
+# 📝 WDV463 Blog
 
-```sh
-npm create astro@latest -- --template blog
-```
+You can find the deployed project at [Blog](https://jeremichshane-fs.github.io/blog/)
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/blog)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/blog)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/blog/devcontainer.json)
+## 🌟 Overview
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Built a blog website using Astro, a modern static site generator. Styled the website using custom CSS for a unique and responsive design. Implemented best practices for performance and accessibility, ensuring a fast and user-friendly experience. Leveraged Astro's powerful features to create dynamic content and seamless navigation.
 
-![blog](https://github.com/withastro/astro/assets/2244813/ff10799f-a816-4703-b967-c78997e8323d)
+<br>
 
-Features:
+![Blog](/public/images/blog.png)
 
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
+<br>
 
-## 🚀 Project Structure
+## 👥 Contributors
 
-Inside of your Astro project, you'll see the following folders and files:
+|                                     [Shane Jeremich](https://github.com/jeremichshane-fs)                                      |
+| :----------------------------------------------------------------------------------------------------------------------------: |
+|      [<img src="https://avatars.githubusercontent.com/u/51142646?v=4" width = "200" />](https://github.com/shanejeremich)      |
+|                   [<img src="https://github.com/favicon.ico" width="15"> ](https://github.com/shanejeremich)                   |
+| [ <img src="https://static.licdn.com/sc/h/al2o9zrvru7aqj8e1x2rzsrca" width="15"> ](https://www.linkedin.com/in/shanejeremich/) |
 
-```text
-├── public/
-├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
-```
+<br>
+<br>
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+![MIT](https://img.shields.io/packagist/l/doctrine/orm.svg?style=for-the-badge)
+![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=for-the-badge&?style=flat-square)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Astro](https://img.shields.io/badge/astro-%232C2052.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+## ✨ Key Features
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+- Astro.build
+- CSS Styling
+- Blog Articles
+- GitHub Pages
 
-Any static assets, like images, can be placed in the `public/` directory.
+### 🚀 Front end deployed to `GitHub Pages`
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-
-## Credit
-
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+- [Blog](https://jeremichshane-fs.github.io/blog/)
