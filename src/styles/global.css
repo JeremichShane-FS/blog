@@ -8,8 +8,19 @@
   --gray-gradient: rgba(var(--gray-light), 50%), #fff;
 
   --box-shadow: 0 2px 6px rgba(var(--gray), 25%), 0 8px 24px rgba(var(--gray), 33%),
-    0 16px 32px rgba(var(--gray), 33%);
+    0 1rem 32px rgba(var(--gray), 33%);
+
+  --s: 0.1875rem;
+  --c1: #b9b9b9;
+  --c2: #dcdcdc;
+  --c3: #fafafa;
+
+  --transition: all 0.3s ease;
+  --scrollbar-bg: var(--black-bg);
+  --scrollbar-thumb: #fff;
+  --scrollbar-thumb-hover: var(--blue);
 }
+
 @font-face {
   font-family: "Atkinson";
   src: url("/blog/fonts/atkinson-regular.woff") format("woff");
@@ -17,6 +28,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
   font-family: "Atkinson";
   src: url("/blog/fonts/atkinson-bold.woff") format("woff");
@@ -25,13 +37,51 @@
   font-display: swap;
 }
 
-body {
-  font-family: "Atkinson", sans-serif;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font: inherit;
+}
+
+body {
+  font-family: "Atkinson", sans-serif;
   color: rgb(var(--gray-dark));
   font-size: 1.25rem;
   line-height: 1.7;
+  /* background-color: #fff; */
+  /* transition: var(--transition); */
+}
+
+html {
+  background: conic-gradient(
+        from 75deg,
+        var(--c1) 15deg,
+        var(--c2) 0 30deg,
+        #0000 0 180deg,
+        var(--c2) 0 195deg,
+        var(--c1) 0 210deg,
+        #0000 0
+      )
+      calc(0.5 * var(--s)) calc(0.5 * var(--s) / 0.577),
+    conic-gradient(
+      var(--c1) 30deg,
+      var(--c3) 0 75deg,
+      var(--c1) 0 90deg,
+      var(--c2) 0 105deg,
+      var(--c3) 0 150deg,
+      var(--c2) 0 180deg,
+      var(--c3) 0 210deg,
+      var(--c1) 0 256deg,
+      var(--c2) 0 270deg,
+      var(--c1) 0 286deg,
+      var(--c2) 0 331deg,
+      var(--c3) 0
+    );
+  background-size: var(--s) calc(var(--s) / 0.577);
+  scroll-behavior: smooth;
 }
 
 main {
@@ -39,6 +89,8 @@ main {
   max-width: calc(100% - 2rem);
   margin: auto;
   padding: 3rem 1rem;
+  display: grid;
+  gap: 2rem;
 }
 
 h1,
@@ -46,26 +98,35 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+button,
+input,
+label {
+  line-height: 1.1;
+  text-wrap: balance;
   margin: 0 0 0.5rem 0;
   color: rgb(var(--black));
-  line-height: 1.2;
+  transition: var(--transition);
 }
 
 h1 {
-  font-size: 3.052em;
+  font-size: 3.05125rem;
 }
+
 h2 {
-  font-size: 2.441em;
+  font-size: 2.75rem;
 }
+
 h3 {
-  font-size: 1.953em;
+  font-size: 1.953rem;
 }
+
 h4 {
-  font-size: 1.563em;
+  font-size: 1.563rem;
 }
+
 h5 {
-  font-size: 1.25em;
+  font-size: 1.25rem;
 }
 
 strong,
@@ -75,6 +136,7 @@ b {
 
 a {
   color: var(--blue);
+  transition: var(--transition);
 }
 
 a:hover {
@@ -82,31 +144,29 @@ a:hover {
 }
 
 p {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 .prose p {
-  margin-bottom: 2em;
+  margin-bottom: 2rem;
 }
 
-textarea {
-  width: 100%;
-  font-size: 16px;
-}
-
+textarea,
 input {
-  font-size: 16px;
-}
-
-table {
   width: 100%;
+  font-size: 1rem;
+  transition: var(--transition);
 }
 
-img {
+img,
+picture,
+svg,
+video {
   display: block;
   max-width: 100%;
   height: auto;
   border-radius: 8px;
+  transition: var(--transition);
 }
 
 code {
@@ -126,21 +186,22 @@ pre > code {
 
 blockquote {
   border-left: 4px solid var(--blue);
-  padding: 0 0 0 20px;
+  padding: 0 0 0 1.25rem;
   margin: 0px;
-  font-size: 1.333em;
+  font-size: 1.333rem;
 }
 
 hr {
   border: none;
-  border-top: 1px solid rgb(var(--gray-light));
+  border-top: 1px solid rgb(var(--black));
 }
-@media (max-width: 720px) {
+
+@media (max-width: 45em) {
   body {
-    font-size: 18px;
+    font-size: 1.125rem;
   }
   main {
-    padding: 1em;
+    padding: 1rem;
   }
 }
 
@@ -156,4 +217,23 @@ hr {
   clip: rect(1px, 1px, 1px, 1px);
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 0.875rem;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-thumb);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbar-bg);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--scrollbar-thumb-hover);
 }

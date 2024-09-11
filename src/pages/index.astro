@@ -15,7 +15,9 @@ import { Image } from 'astro:assets';
 		<Header />
 		<main>
   <header>
-    <Image class="sj-logo" src=`${import.meta.env.BASE_URL}/images/black-logo.png` alt="Shane Jeremich logo" width={189} height={160} loading="eager" decoding="async"/>
+
+    <Image class="feature-image" src=`${import.meta.env.BASE_URL}/images/do-more.jpg` alt="Computer that says Do More" width={720} height={480} loading="eager" decoding="async" />
+    
     <h1>Hi there 👋</h1>
     <h2>
       My name is <strong>Shane Jeremich</strong> 
@@ -26,29 +28,22 @@ import { Image } from 'astro:assets';
     Welcome to <strong>WDV463</strong>! I'm Shane Jeremich, and this space is dedicated to sharing insights, resources, and reflections on the ever-evolving world of technology. As I continue my journey through the WDV463 course and beyond, I’ll be diving into topics that spark my curiosity and expanding on what I’ve learned. Whether it’s a recent discovery, a deep dive into tech tools, or thoughts on development best practices, I hope my posts offer valuable takeaways and perspectives for fellow learners and tech enthusiasts.
   </p>
 
-  <Image class="feature-image" src=`${import.meta.env.BASE_URL}/images/do-more.jpg` alt="Computer that says Do More" width={720} height={480} loading="eager" decoding="async" />
+
 
   <p>
     In this blog, I aim to break down complex ideas into accessible, easy-to-understand posts. Whether you're just starting out or have been working with technology for a while, there's something here for everyone. Feel free to explore, ask questions, and share your thoughts. My goal is to create a collaborative space where we can all learn from each other and stay up-to-date with the latest trends and tools in the tech world. 🌐
   </p>
+
+    
 </main>
 
 		<Footer />
 	</body>
 </html>
 <style>
-  .sj-logo {
-    height: 10rem;
-    margin: 0 auto;
-  }
-  .feature-image {
+    .feature-image {
     width: 100%;
-    margin: 4rem 0;
-  }
-  h1 {
-    margin-top: 4rem;
-  }
-  h2 {
-    margin-bottom: 4rem;
+    margin: 2rem 0;
+    box-shadow: var(--box-shadow);
   }
 </style>
