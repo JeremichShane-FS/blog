@@ -15,7 +15,7 @@
   --c2: #dcdcdc;
   --c3: #fafafa;
 
-  --transition: all 0.3s ease;
+  --transition: all 0.2s ease;
   --scrollbar-bg: var(--black-bg);
   --scrollbar-thumb: #fff;
   --scrollbar-thumb-hover: var(--blue);
@@ -51,8 +51,6 @@ body {
   color: rgb(var(--gray-dark));
   font-size: 1.25rem;
   line-height: 1.7;
-  /* background-color: #fff; */
-  /* transition: var(--transition); */
 }
 
 html {
@@ -135,12 +133,13 @@ b {
 }
 
 a {
-  color: var(--blue);
+  color: #fff;
   transition: var(--transition);
 }
 
 a:hover {
   color: var(--blue);
+  cursor: pointer;
 }
 
 p {
@@ -219,7 +218,6 @@ hr {
   white-space: nowrap;
 }
 
-/* Custom Scrollbars */
 ::-webkit-scrollbar {
   width: 0.875rem;
 }
