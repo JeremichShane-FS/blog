@@ -1,6 +1,6 @@
 ---
 title: "My First Experience with Astro Build 🚀"
-description: "Lorem ipsum dolor sit amet"
+description: "Join me as I dive into Astro Build, exploring its features, benefits, and my personal journey in creating a fast and modern static site."
 pubDate: "Sept 8 2024"
 heroImage: "/images/astro-build.jpg"
 ---
@@ -33,6 +33,8 @@ I wanted to learn Astro for a few reasons:
 2. **Flexibility**: I love the fact that Astro allows me to use multiple frameworks (React, Vue, Svelte, etc.) in one project. This opens up a world of possibilities when it comes to creating highly customizable and dynamic sites.
 3. **Simplified Build Process**: Static site generators like Astro make the deployment process easier by generating a fully static site that can be hosted on platforms like **Netlify** or **Vercel** with minimal setup.
 
+<br>
+
 ## My First Impressions 🌟
 
 Getting started with Astro was surprisingly easy! The **documentation** is clear and straightforward, which made it simple to set up my first project. Here's how I got started:
@@ -40,6 +42,8 @@ Getting started with Astro was surprisingly easy! The **documentation** is clear
 1. **Installation**: I installed Astro via the command line using `npm create astro@latest`, and within a few minutes, I had a basic project up and running.
 2. **File Structure**: Astro's file structure felt familiar and easy to navigate. It reminded me of other static site generators but with a more modern twist.
 3. **Development Experience**: The development experience was smooth, and I loved how fast the site built during local development. It felt like I was writing code that truly prioritizes performance.
+
+<br>
 
 ## Why I’ll Be Using Astro in the Future 🔮
 
@@ -50,6 +54,8 @@ Here are a few reasons why I’ll be using Astro going forward:
 - **Speed**: The zero-JS-by-default model ensures that the sites I build will load quickly, giving users a smooth experience.
 - **Component Flexibility**: The ability to mix and match frameworks in the same project is not something I’ve seen in other SSGs, and it really opens up creative possibilities.
 - **Learning Opportunities**: As a student, I’m always eager to learn new technologies, and Astro’s modern approach to building static sites aligns with the **future** of web development. It's an exciting tool that keeps me on my toes and pushes me to think about performance in new ways.
+
+<br>
 
 ## Wrapping Up 🎁
 

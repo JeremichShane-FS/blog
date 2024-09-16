@@ -1,6 +1,6 @@
 ---
 title: "Discovering MongoDB: A Beginner's Journey into NoSQL Databases 🌱"
-description: "Lorem ipsum dolor sit amet"
+description: "I explore MongoDB, a powerful NoSQL database, and learn how it can transform the way you handle data in your applications."
 pubDate: "Sept 10 2024"
 heroImage: "/images/mongodb.png"
 ---

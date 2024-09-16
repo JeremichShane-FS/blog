@@ -1,6 +1,6 @@
 ---
 title: "Exploring Node.js: The Backbone of Modern Web Development 🖥️"
-description: "Lorem ipsum dolor sit amet"
+description: "Discover the power of Node.js and how it revolutionizes server-side development with its event-driven, non-blocking I/O model."
 pubDate: "Sept 9 2024"
 heroImage: "/images/nodejs.png"
 ---
@@ -18,6 +18,8 @@ Node.js takes advantage of **asynchronous, event-driven architecture**, making i
 - Node.js lets you write server-side code in JavaScript.
 - It's great for building fast and scalable applications.
 - It handles multiple requests **asynchronously** without blocking the main thread.
+
+<br>
 
 ## Why is Node.js So Popular? 💡
 
@@ -60,6 +62,8 @@ My first experiences with Node.js have been both exciting and challenging. Here�
 2. **Learning Asynchronous Code**: One of the challenges I faced was getting used to **asynchronous programming**. Coming from a synchronous, blocking-code mindset, it took me some time to understand how callbacks, promises, and async/await worked. But once I grasped the concept, it opened up a whole new way of thinking about programming.
 3. **Building APIs**: I started by building some basic REST APIs using **Express.js** (a Node.js framework). This was a great learning experience, and I quickly realized the power of Node when it comes to handling requests and routing efficiently.
 
+<br>
+
 ## Why I’ll Continue Using Node.js in the Future 🌱
 
 After spending time with Node.js, it’s clear that it’s a tool I’ll be using for a long time. Here's why:
@@ -68,6 +72,8 @@ After spending time with Node.js, it’s clear that it’s a tool I’ll be usin
 - **Performance**: Node.js’s **non-blocking I/O** makes it perfect for building apps that need to handle lots of connections in real-time, like chat applications or multiplayer games.
 - **Scalability**: Node.js is built for **scalable** network applications, and as I progress in my career, this is going to be an essential skill.
 - **The Community**: The **Node.js community** is huge and vibrant. The vast number of resources, libraries, and support available through the community is invaluable for any developer, especially for students like me who are learning and experimenting with new technologies.
+
+<br>
 
 ## Final Thoughts 💭
 
